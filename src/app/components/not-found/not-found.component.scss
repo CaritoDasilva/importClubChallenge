@@ -1,0 +1,17 @@
+.notFound {
+  background-image: url('../../../assets/404.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  padding: 1%;
+  width: 100vw;
+  height: 581px;
+  overflow: hidden;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .notFound {
+    overflow: scroll;
+    background-attachment: scroll;
+  }
+}

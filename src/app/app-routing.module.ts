@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { CardComponent } from './components/card/card.component';
 
 const routes: Routes = [
-  { path: 'home', component: AppComponent },
+  { path: 'home', component: CardComponent },
   {
     path: '',
     redirectTo: '/home',
@@ -14,7 +14,10 @@ const routes: Routes = [
 
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(
+    routes,
+    { enableTracing: true } // <-- debugging purposes only
+  )],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
