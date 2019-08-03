@@ -13,10 +13,18 @@ mat-card {
   border: solid 2px #583386;
 }
 
-.priceProduct {
-  font-size: 13px;
+.priceProductRetail {
+  font-size: 10px;
+  text-decoration: line-through;
+
 }
 
 button {
   margin-bottom: 7%;
+  margin-left: 9%;
+}
+
+.priceProductImportClub,
+.productName {
+  font-size: 14px;
 }

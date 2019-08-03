@@ -3,8 +3,9 @@
     <mat-card [ngClass]="{'firstOption': product.type === 0, 'secondOption': product.type === 1}">
       <mat-card-header>
         <mat-card-title>
-          <h6>{{product.name}}</h6>
-          <h6 class="priceProduct">${{product.retail_price}}</h6>
+          <h6 class="productName">{{product.name}}</h6>
+          <h6 class="priceProductRetail">Precio Retail: ${{product.retail_price}}</h6>
+          <h6 class="priceProductImportClub">Precio ImportClub: ${{product.importclub_price}}</h6>
         </mat-card-title>
       </mat-card-header>
       <img mat-card-image src={{product.img}}>
