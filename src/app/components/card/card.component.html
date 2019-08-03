@@ -1,5 +1,20 @@
 <div class="row align-items-center">
-  <div class="col-sm-6 col-md-3">
-    <mat-card *ngFor="let product of listProduct; index as i;">hola</mat-card>
+  <div class="col-sm-6 col-md-3" *ngFor="let product of listProducts; index as i;">
+    <mat-card [ngClass]="{'firstOption': product.type === 0, 'secondOption': product.type === 1}">
+      <mat-card-header>
+        <mat-card-title>
+          <h6>{{product.name}}</h6>
+          <h6 class="priceProduct">${{product.retail_price}}</h6>
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src={{product.img}}>
+      <mat-card-footer>
+        <div class="row align-items-center">
+          <div class="col-md-8 offset-md-3">
+            <button type="button" class="btn btn-primary btn-sm" (click)="goToDetails(product.detail)">Ver más</button>
+          </div>
+        </div>
+      </mat-card-footer>
+    </mat-card>
   </div>
 </div>

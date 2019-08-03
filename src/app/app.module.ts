@@ -9,13 +9,17 @@ import { CardComponent } from './components/card/card.component';
 //Angular Material
 import { MatCardModule } from '@angular/material/card';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { DetailsComponent } from './components/details/details.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
-    NavbarComponent
+    NavbarComponent,
+    DetailsComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
