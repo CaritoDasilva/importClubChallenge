@@ -5,6 +5,10 @@ mat-card {
   margin-right: 7%;
 }
 
+mat-card-header {
+  height: 20vh;
+}
+
 .firstOption {
   border: solid 2px #FA017A;
 }
@@ -22,6 +26,7 @@ mat-card {
 button {
   margin-bottom: 7%;
   margin-left: 9%;
+  width: 80%
 }
 
 .priceProductImportClub,
