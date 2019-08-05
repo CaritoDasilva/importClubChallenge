@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../services/api.service';
+import { Product } from 'src/app/models/product.model';
 
 @Component({
   selector: 'app-card',
@@ -7,7 +8,7 @@ import { ApiService } from '../../services/api.service';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-  listProducts: [] = []
+  listProducts: Product[] = []
   response = false;
 
   constructor(public api: ApiService) {
@@ -21,16 +22,13 @@ export class CardComponent implements OnInit {
     this.api.getProducts().subscribe((products: any) => {
       this.response = true;
       this.listProducts = products.productos;
-      console.log(this.listProducts);
     });
   }
 
   goToDetails(url) {
     url = url.slice(0);
     let urldetails = `https://www.importclub.cl/${url}`
-    console.log(urldetails);
     location.replace(urldetails);
-    console.log(url);
   }
 
 }
