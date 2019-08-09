@@ -12,13 +12,15 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   { path: 'detail/:url', component: DetailComponent },
-  { path: '**', component: NotFoundComponent }
+  { path: 'product-not-found', component: NotFoundComponent },
+
+  { path: '**', component: NotFoundComponent },
+
 
 ];
 @NgModule({
   imports: [RouterModule.forRoot(
     routes,
-    // <-- debugging purposes only
   )],
   exports: [RouterModule]
 })
