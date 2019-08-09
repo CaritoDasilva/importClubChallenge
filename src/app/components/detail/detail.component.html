@@ -1,8 +1,19 @@
 <div *ngFor="let detail of detailProduct">
-  <p>{{detail.campaign.PRODUCT.COMMON_NAME}}</p>
-  <div *ngIf="detail.campaign.TYPE === 0">
-    <mat-progress-bar mode="determinate" name="value" [(value)]="value" value={value}>
-    </mat-progress-bar>
+  <div class="row">
+    <div class="col-md-9 offset-md-2">
+      <div class="col-md-8 offset-md-2">
+        <h2>{{detail.campaign.PRODUCT.COMMON_NAME}}</h2>
+      </div>      
+      <div *ngIf="detail.campaign.TYPE === 0">
+        <div class="col-md-12">
+          <mat-progress-bar mode="determinate" name="value" [(value)]="value" value={value}>
+          </mat-progress-bar>
+        </div>
+        <div class="col-2 offset-md-5">
+          <h1>{{value}}%</h1>
+        </div>
+    </div>
+  </div>
 
   </div>
 
