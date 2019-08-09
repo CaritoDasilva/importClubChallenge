@@ -13,4 +13,8 @@ export class ApiService {
   getProducts() {
     return this.http.get('https://testapi.io/api/hilderh//product/all');
   }
+
+  getProduct(detail) {
+    return this.http.get(`http://api.importclub.cl/products/name/${detail}`);
+  }
 }

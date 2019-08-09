@@ -10,6 +10,7 @@ import { CardComponent } from './components/card/card.component';
 import { MatCardModule } from '@angular/material/card';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { DetailComponent } from './components/detail/detail.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     AppComponent,
     CardComponent,
     NavbarComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
