@@ -35,4 +35,3 @@ export class DetailComponent implements OnInit {
 
 
 }
-//o * 100 / s
