@@ -11,6 +11,7 @@ import { MatCardModule } from '@angular/material/card';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { DetailComponent } from './components/detail/detail.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { DetailComponent } from './components/detail/detail.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
